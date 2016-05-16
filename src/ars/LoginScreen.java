@@ -87,6 +87,13 @@ public class LoginScreen extends JFrame {
 		contentPane.add(btnLogin);
 		
 		JButton btnRegister = new JButton("Register");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				dispose();
+				RegisterScreen reg1 = new RegisterScreen();
+				reg1.setVisible(true);
+			}
+		});
 		btnRegister.setBounds(162, 206, 89, 23);
 		contentPane.add(btnRegister);
 		
