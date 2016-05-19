@@ -91,7 +91,18 @@ public class RegisterScreen extends JFrame {
 				    }
 			}
 		});
-		btnCreateUser.setBounds(165, 157, 108, 23);
+		btnCreateUser.setBounds(122, 158, 108, 23);
 		contentPane.add(btnCreateUser);
+		
+		JButton btnCancel = new JButton("Cancel");
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				dispose();
+				LoginScreen reg2 = new LoginScreen();
+				reg2.setVisible(true);
+			}
+		});
+		btnCancel.setBounds(249, 158, 89, 23);
+		contentPane.add(btnCancel);
 	}
 }
